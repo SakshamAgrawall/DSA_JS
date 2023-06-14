@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+    <script>
+        let data = [1,23,4,34,2,2,3,23];
+        // for(let i=0;i<data.length;i++){
+        //     document.write(`array ${i} is ${data[i]} <br>`)
+        // }
+       function getElement(){
+        let el = document.getElementById("element").value
+        alert(data[el]);
+       }
+    </script>
+</head>
+<body>
+<input type="text" id="element">
+<button onclick="getElement()">Get Element</button>
+</body>
+</html>
