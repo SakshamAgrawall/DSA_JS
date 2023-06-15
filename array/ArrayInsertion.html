@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ArrayInsertion</title>
+</head>
+<script>
+    let data = [2,12,32,3,9,34,3];
+    function insertEl(){
+    newEl=document.getElementById("newEl").value;
+    newEl=parseInt(newEl);
+    position = document.getElementById("position").value;
+    for(let i=data.length-1;i>=0;i--){
+        if(i>=position){
+            data[i+1]=data[i];
+            if(i==position){
+                data[i]=newEl;
+            }
+        }
+    }
+    console.log(data);
+}
+</script>
+<body>
+    <input type="text" id="position" placeholder="enter your position"/>
+    <input type="text" id="newEl" placeholder="enter your element"/>
+    <button onclick="insertEl()">insert</button>
+    
+</body>
+</html>
