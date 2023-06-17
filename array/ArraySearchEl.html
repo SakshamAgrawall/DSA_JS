@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ArraySearchEl</title>
+    <script>
+        let data = [21,2,1,3,4,6,7,3,22,12,65];
+        function SeachEl(){
+            let index=undefined;
+            let element = document.getElementById('element').value;
+            for(let i=0;i<=data.length;i++){
+                if(data[i]==element){
+                    index=i;
+                    break;
+                }
+            }
+            console.log(index);
+        }
+            
+    </script>
+</head>
+<body>
+    <input type="text" id="element" placeholder="enter your element">
+    <button onclick="SeachEl()">Search element</button>
+</body>
+</html>
