@@ -29,6 +29,22 @@ function display(){
 }
 
 
+function front(){
+    if(currentSize>0){
+        console.log(queue[0])
+    }else[
+        console.log('empaty')
+    ]
+}
+function rare(){
+    if(currentSize>0){
+        console.log(queue[currentSize-1])
+    }else[
+        console.log('empaty')
+    ]
+}
+
+
 enqueue(20)
 enqueue(21)
 enqueue(22)
