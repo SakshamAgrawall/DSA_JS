@@ -6,7 +6,7 @@ function insertionSort(data){
     current=data[i];
     j=i-1;
     while(j>=0&&data[j]>current){
-        data[j+1]=data[j]
+        data[j+1]=data[j];
         j--
     }
     data[j+1]=current;
@@ -15,4 +15,6 @@ function insertionSort(data){
 }
 // insertionSort(data)
 
-console.log(insertionSort(data))
+console.log(insertionSort(data));
+
+
